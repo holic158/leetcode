@@ -1,0 +1,8 @@
+/* Write your PL/SQL query statement below */
+SELECT A.FIRSTNAME
+        ,A.LASTNAME
+        , B.CITY
+        , B.STATE
+FROM PERSON A
+LEFT OUTER JOIN ADDRESS B
+ON A.PERSONID = B.PERSONID
